@@ -1,0 +1,14 @@
+<!--<resources>-->
+<!--    <string name="app_name">ProjectList</string>-->
+<!--</resources>-->
+
+<resources>
+    <string name="app_name">ProjectList</string>
+    <string name="btnLabel">Seek Project</string>
+    <string name="defaultText">No options selected</string>
+    <string-array name="projectStringArray">
+        <item>Academic</item>
+        <item>Business</item>
+        <item>Healthcare</item>
+    </string-array>
+</resources>
