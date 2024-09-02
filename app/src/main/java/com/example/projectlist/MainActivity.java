@@ -1,5 +1,6 @@
 package com.example.projectlist;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Spinner;
@@ -38,9 +39,12 @@ public class MainActivity extends AppCompatActivity {
         for (String menu : projectList) {
             projectNameFormatted.append(menu).append('\n');
         }
+        Intent intent = new Intent(this, SecondActivity.class);
+        intent.putExtra("message", (CharSequence) projectNameFormatted);
+        startActivity(intent);
 
-        TextView menuText = (TextView) findViewById(R.id.ProjectTextView);
-        menuText.setText(projectNameFormatted);
+//        TextView menuText = (TextView) findViewById(R.id.ProjectTextView);
+//        menuText.setText(projectNameFormatted);
     }
 
 }
